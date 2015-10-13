@@ -7,6 +7,4 @@ workon vaca
 
 pip install -r requirements.txt
 
-django-admin.py startproject vacaciones
 
-python manage.py startapp principal
