@@ -1,7 +1,7 @@
 from django.contrib import admin
-from .models import Asociados, Vacaciones, Feriados
+from .models import Asociado, Vacacion, Feriado
 
 # Register your models here.
-admin.site.register(Asociados)
-admin.site.register(Vacaciones)
-admin.site.register(Feriados)
+admin.site.register(Asociado)
+admin.site.register(Vacacion)
+admin.site.register(Feriado)
