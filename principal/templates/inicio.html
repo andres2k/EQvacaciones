@@ -10,7 +10,7 @@
             <p>Estas son las vacaciones registradas:</p>
             <ul>
                 {%for dato in vacaciones%}
-                <li>{{dato.asociado.nombre || dato.fecha_desde || "hasta" || dato.fecha_hasta}} </li>
+                <li>{{dato.asociado.nombre}} se toma del {{dato.fecha_desde | date:'DATE_FORMAT'}} hasta el {{dato.fecha_hasta | date:'DATE_FORMAT'}}</li>
                 {%endfor%}
             </ul>
         </section>
