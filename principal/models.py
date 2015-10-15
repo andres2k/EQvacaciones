@@ -3,7 +3,7 @@ from django.utils import timezone
 
 # Create your models here.
 class Asociado(models.Model):
-	"""Modelo para los asociados"""
+	"""Modelo para los asociados """
 	class Meta:
 		verbose_name_plural="Asociados"
 	nombre = models.CharField(max_length=500)
