@@ -21,7 +21,7 @@ class Vacacion(models.Model):
 	fecha_hasta = models.DateField(default=timezone.now)
 
 	def __unicode__(self):
-		return self.asociado.nombre + " : " + str(self.fecha_desde) + " to " + str(self.fecha_hasta)
+		return self.asociado.nombre + " : " + self.fecha_desde.strftime("%d/%m/%Y") + " al " + self.fecha_hasta.strftime("%d/%m/%Y")
 
 class Feriado(models.Model):
 	"""Modelo para los Feriados"""
