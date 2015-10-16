@@ -69,8 +69,7 @@ TEMPLATES = [
     },
 ]
 
-#TEMPLATE_DIRS = (
-#    os.path.join(RUTA_PROYECTO,'plantillas'),
+#TEMPLATE_DIRS = (    os.path.join(RUTA_PROYECTO,'templates'),
 #)
 
 WSGI_APPLICATION = 'vacaciones.wsgi.application'

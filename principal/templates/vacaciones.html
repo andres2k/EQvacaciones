@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang='es'>
     <head>
-        <title>Lista de vacaciones</title>
+        <title>Lista de vacaciones por usuario</title>
         <meta charset='utf-8'>
     </head>
     <body>
         <section>
             <h1>Vacaciones</h1>
-            <p>Estas son las vacaciones registradas:</p>
+            <p>Estas son las vacaciones registradas para el usuario: {{dato.asociado.nombre}}</p>
             <ul>
-                {%for dato in vacaciones%}
+                {%for dato in dato%}
                 <li>{{dato.asociado.nombre}} se toma del {{dato.fecha_desde | date:'DATE_FORMAT'}} hasta el {{dato.fecha_hasta | date:'DATE_FORMAT'}}</li>
                 {%endfor%}
             </ul>
