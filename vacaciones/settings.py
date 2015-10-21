@@ -106,3 +106,8 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 #encoding:utf-8
+
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, "static"),
+    '/home/eloyc/ownCloud/EQvacaciones/',
+)
