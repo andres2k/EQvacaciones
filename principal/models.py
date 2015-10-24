@@ -7,7 +7,8 @@ class Asociado(models.Model):
 	class Meta:
 		verbose_name_plural="Asociados"
 	nombre = models.CharField(max_length=500)
-	fecha_ingreso=models.DateField(default=timezone.now)
+	fecha_ingreso = models.DateField(default=timezone.now)
+	imagen = models.CharField(max_length=500)
 
 	def __unicode__(self):
 		return self.nombre
