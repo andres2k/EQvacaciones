@@ -13,8 +13,8 @@ class Migration(migrations.Migration):
     operations = [
         migrations.AddField(
             model_name='asociado',
-            name='imagen',
-            field=models.CharField(default='/home/mauroc/Proyectos/EQvacaciones/static/image/3865119.png', max_length=500),
+            name='imagen2',
+            field=models.CharField(default=1, max_length=500),
             preserve_default=False,
         ),
     ]

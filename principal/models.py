@@ -1,5 +1,8 @@
 from django.db import models
 from django.utils import timezone
+from django.contrib.auth.models import User
+from django.conf import settings
+
 
 # Create your models here.
 class Asociado(models.Model):
@@ -9,9 +12,10 @@ class Asociado(models.Model):
 	nombre = models.CharField(max_length=500)
 	fecha_ingreso = models.DateField(default=timezone.now)
 	imagen = models.CharField(max_length=500)
+	user = models.OneToOneField(settings.AUTH_USER_MODEL, )
 
 	def __unicode__(self):
-		return self.nombre
+		return self.user.first_name + ' ' + self.user.last_name
 
 class Vacacion(models.Model):
 	"""Modelo para las vacaciones"""
