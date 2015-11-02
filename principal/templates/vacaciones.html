@@ -1,10 +1,10 @@
 {% extends 'base.html' %}
 {% block titulo %} Vacaciones por Asociado {% endblock %}
-{% block encabezado %} <h1> Vacaciones de {{asociado.nombre}}</h1> {% endblock %}
+{% block encabezado %} <h1> Vacaciones de {{asociado}}</h1> {% endblock %}
 {% block contenido %}
             <ul>
                 {%for dato in vacaciones%}
-                <li>{{asociado.nombre}} se toma del {{dato.fecha_desde | date:'DATE_FORMAT'}} hasta el {{dato.fecha_hasta | date:'DATE_FORMAT'}}</li>
+                <li>{{asociado}} se toma del {{dato.fecha_desde | date:'DATE_FORMAT'}} hasta el {{dato.fecha_hasta | date:'DATE_FORMAT'}}</li>
                 {%endfor%}
             </ul>
 {% endblock %}

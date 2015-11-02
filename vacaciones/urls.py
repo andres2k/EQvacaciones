@@ -21,6 +21,7 @@ admin.autodiscover()
 
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
-    url(r'^$', 'principal.views.inicio'),
-    url(r'^vacaciones/(?P<id_asociado>\d+)$', 'principal.views.vacacion_usuario')
+    url(r'^$', 'principal.views.index'),
+    url(r'^vacaciones/(?P<id_asociado>\d+)$', 'principal.views.vacacion_usuario'),
+    url(r'^crear/', 'principal.views.nueva_vacacion', name='crear'),
 ]
